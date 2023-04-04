@@ -1,13 +1,135 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #333333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Times New Roman", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.inputs {
+  background-color: #444444;
+  display: flex;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 1000px;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input > label {
+  margin: 1rem 0;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.input > input {
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  width: 250px;
+}
+
+.inputs > div {
+  display: flex;
+  gap: 3rem;
+}
+
+.submit {
+  margin: auto 0;
+}
+
+.submit > button {
+  background-color: orange;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.submit > button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.task_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.task_container {
+  background-color: #444444;
+  width: 1000px;
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+}
+
+.task_title {
+  font-size: 3em;
+  font-weight: bold;
+  color: orange;
+}
+
+.task_desc {
+  font-size: 1em;
+  margin-top: 0.5rem;
+}
+
+.task_buttons {
+  display: flex;
+  gap: 1rem;
+  margin: auto 0;
+}
+
+.complete {
+  background-color: white;
+  color: rgb(18, 196, 18);
+  border: 2px solid rgb(18, 196, 18);
+  border-radius: 25px;
+  height: 50px;
+  width: 130px;
+}
+
+.delete {
+  background-color: white;
+  color: rgb(223, 18, 18);
+  border: 2px solid rgb(223, 18, 18);
+  border-radius: 25px;
+  height: 50px;
+  width: 130px;
+}
+
+.complete:hover {
+  background-color: rgb(18, 196, 18);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.delete:hover {
+  background-color: rgb(223, 18, 18);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
 }
