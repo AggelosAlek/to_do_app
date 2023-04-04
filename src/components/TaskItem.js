@@ -34,7 +34,7 @@ function TaskItem({ title, desc, complete, id }) {
   };
 
   return (
-    <div key={id} className="task_container">
+    <div className="task_container">
       <div>
         <div className="task_title">{!complete ? title : <s>{title}</s>}</div>
         <div className="task_desc">{!complete ? desc : <s>{desc}</s>}</div>

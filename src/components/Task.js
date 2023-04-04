@@ -13,6 +13,7 @@ function Task() {
         desc={task?.desc}
         complete={task?.completed}
         id={task?.id}
+        key={task?.id}
       />
     );
   });
